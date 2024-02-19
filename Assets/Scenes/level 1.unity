@@ -123,6 +123,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &446081218 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5083709414011833936, guid: dbab6d13bb0ba4f478d0ceb9e31edf8c, type: 3}
+  m_PrefabInstance: {fileID: 715622940}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &446081222
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446081218}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.64, y: 0.64}
+  m_EdgeRadius: 0
 --- !u!1 &615976252
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,7 +306,7 @@ GameObject:
   - component: {fileID: 1285689960}
   - component: {fileID: 1285689959}
   m_Layer: 0
-  m_Name: Grid (1)
+  m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3900,9 +3931,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2027553128}
   - component: {fileID: 2027553127}
-  - component: {fileID: 2027553126}
   - component: {fileID: 2027553125}
   - component: {fileID: 2027553124}
+  - component: {fileID: 2027553129}
   m_Layer: 0
   m_Name: Fall (32x32)_0
   m_TagString: Untagged
@@ -3957,23 +3988,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2027553126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2027553123}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c06d65dace9fbda4ea6237a52594eeb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpDuration: 0.5
-  jumpHeight: 1.5
-  isGrounded: 0
-  rb: {fileID: 0}
-  speed: 10
 --- !u!212 &2027553127
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4041,3 +4055,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2027553129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027553123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c40cce5d3c7c73447a261496744d87fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  jump: 7
+  isGrounded: 0
