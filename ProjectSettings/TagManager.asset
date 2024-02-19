@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - Win2
+  - Win1
   layers:
   - Default
   - TransparentFX
